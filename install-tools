@@ -1,0 +1,16 @@
+
+Install Anaconda :
+$ curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -o miniconda.sh
+$ chmod +x miniconda.sh 
+$ ./miniconda.sh 
+$ source ~/.bashrc
+
+Install git:
+$ conda install -c anaconda git 
+
+Install: Yolov3:
+$ git clone https://github.com/pjreddie/darknet
+
+Install Pretrained Convolutional Weights:
+$ wget https://pjreddie.com/media/files/darknet53.conv.74
+
