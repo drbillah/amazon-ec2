@@ -1,9 +1,12 @@
 Train :
-./darknet detector train /goat/cfg/goat.data /goat/cfg/yolov3-tiny.cfg darknet53.conv.74 > train.log
+./darknet detector train data/goat.data cfg/yolov3-tiny.cfg darknet53.conv.74 > train.log
 
 Test:
-./darknet detector test /goat/cfg/goat.data /goat/yolov3-tiny.cfg /goat/backup/yolov3.weights pic.jpg 
+./darknet detector test goat/goat.data /goat/yolov3-tiny.cfg /goat/backup/yolov3.weights pic.jpg 
 
 Restart traing:
-After each 100 iterations you can stop and later start training from this point. For example, after 2000 iterations you can stop training, and later continue training
+Restart traing; For example, after 2000 iterations you can stop training, and later continue training
 ./darknet detector train data/obj.data yolo-obj.cfg backup/yolo-obj_last.weights
+
+Cal mAP:
+./darknet detector map cfg/goat.data cfg/goat.cfg backup/yolov3-tiny_60000.weights
