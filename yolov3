@@ -5,7 +5,6 @@ Test:
 ./darknet detector test goat/goat.data /goat/yolov3-tiny.cfg /goat/backup/yolov3.weights pic.jpg 
 ./darknet detector test /home/drbillah/master/lab/backup/23-12-2019/voc/load/goat.data /home/drbillah/master/lab/backup/23-12-2019/voc/load/yolov3-voc.cfg /home/drbillah/master/lab/backup/23-12-2019/voc/load/yolov3-voc_3000.weights -dont_show -ext_output < data/train.txt > result.txt
 
-
 Restart traing:
 Restart traing; For example, after 2000 iterations you can stop training, and later continue training
 ./darknet detector train data/obj.data yolo-obj.cfg backup/yolo-obj_last.weights
